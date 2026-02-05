@@ -7,11 +7,10 @@ const {notFound,errorHandler}=require("./middleware/errorMiddleware");
 require("dotenv").config();
 dotenv.config();
 connectDB();
-
 const app=express();
 
 app.use(cors({
-  origin: "https://task-backend.onrender.com/api",
+  origin: "https://task-frontend-ad8b.onrender.com",
   credentials: true
 }));
 app.use(express.json());
